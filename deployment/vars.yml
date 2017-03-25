@@ -1,0 +1,7 @@
+project_group: webapps
+project_name: testproj
+remote_host: github.com
+project_database: db_name_testproject
+project_root: /var/webapps/testproj
+project_repo: git@github.com:ArtemBernatskyy/Django-Seed-Project.git
+project_database_user: db_user_testproject

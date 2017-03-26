@@ -74,7 +74,7 @@ Remote server setup
 Useful commands
 ---------------
 `vagrant ssh`  
-`sudo su -l mtas_user`  
+`sudo su -l testuser_dev`  
 `/var/webapps/testproject/virtualenv/bin/python /var/webapps/testproject/code/manage.py createsuperuser`  
 `/var/webapps/testproject/virtualenv/bin/python /var/webapps/testproject/code/manage.py shell`  
 `/var/webapps/testproject/virtualenv/bin/python /var/webapps/testproject/code/manage.py runserver 0.0.0.0:8001`  

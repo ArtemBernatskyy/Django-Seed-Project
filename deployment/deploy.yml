@@ -40,6 +40,15 @@
       - supervisorctrl add program
       - supervisorctrl restart program
 
+  - name: Install celery configuration file.
+    become: yes
+    template: src="files/conf/supervisor_celery.conf.j2" dest="/etc/supervisor/conf.d/celery_{{ project_name }}.conf" mode="0644"
+    notify: 
+      - supervisorctrl add celery program
+      - supervisorctrl restart celery program
+    tags:
+      - celery
+
   - name: Install gunicorn configuration file.
     become: yes
     become_user: "{{ project_user }}"
